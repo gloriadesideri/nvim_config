@@ -11,6 +11,8 @@ Once you have installed it type `nvim --version` in your terminal and make sure 
 using [Skim](https://skim-app.sourceforge.io/) but you can check out other readers on the VimTex documentation.
 
 You need to install LaTex on your local machine. You can do this [here](https://www.latex-project.org/get/). If you are a MacOS user I suggest you to download BasicTex instead of the full package.
+
+Also you will need to install ripgrep from [here](https://github.com/BurntSushi/ripgrep) to make Telescope work.
 ## How to configure Nvim
 - clone this repository in your local machine
 - copy the `nvim` folder inside your `.config` folder

@@ -7,7 +7,8 @@ I am 100% sure this guide works for MacOS, 90% sure it works on Linux but I don'
 free to contribute with a pull request (or just install WSL on your machine).
 ## Prerequisites
 You need to install Nvim (of course) and you can do it from [here](https://github.com/neovim/neovim/blob/master/INSTALL.md). Make sure to install the latest stable version. 
-Once you have installed it type `nvim --version` in your terminal and make sure the build type is `Release`.
+Once you have installed it type `nvim --version` in your terminal and make sure the build type is `Release`. You will also need a pdf readed to use the VimTex library: in this case I am
+using [Skim](https://skim-app.sourceforge.io/) but you can check out other readers on the VimTex documentation.
 
 You need to install LaTex on your local machine. You can do this [here](https://www.latex-project.org/get/). If you are a MacOS user I suggest you to download BasicTex instead of the full package.
 ## How to configure Nvim

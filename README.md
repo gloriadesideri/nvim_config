@@ -5,6 +5,9 @@ I assume you already know some LaTex, you know how to install basic LaTex packag
 If you have never used vim or nvim I suggest you to watch [this](https://www.youtube.com/watch?v=c4OyfL5o7DU).
 I am 100% sure this guide works for MacOS, 90% sure it works on Linux but I don't know about Windows, so if someone manages to make it work on Windows please give me a feedback and feel
 free to contribute with a pull request (or just install WSL on your machine).
+## Preview
+![Screen1](Screen1.png)
+![Screen2](Screen2.png)
 ## Prerequisites
 You need to install Nvim (of course) and you can do it from [here](https://github.com/neovim/neovim/blob/master/INSTALL.md). Make sure to install the latest stable version. 
 Once you have installed it type `nvim --version` in your terminal and make sure the build type is `Release`. You will also need a pdf readed to use the VimTex library: in this case I am

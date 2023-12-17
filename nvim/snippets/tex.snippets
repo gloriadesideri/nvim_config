@@ -1,0 +1,174 @@
+#usepackage
+snippet up "Use Package" b
+	\usepackage[${1:options}]{${2:package}} ${0}
+#
+
+# \begin{}...\end{}
+snippet begin "Begin End"
+	\begin{${1:env}}
+		${2:${VISUAL}}
+	\end{$1}${0}
+#
+
+# Align(ed)
+snippet align "Align Env" b
+	\begin{align${1:ed}}
+		\label{${2:name}}
+		${0}
+	\end{align$1}
+# 
+# Quote
+snippet quote "Quotation" b
+	\vspace{-.1in}
+	\begin{quote}\singlespacing\small
+		${0}
+		\hfill(p.~${1})
+	\end{quote}
+	\vspace{.1in}
+#
+
+# Labelalign
+snippet labelalign "Label Align" b
+	\vspace{.05in}
+	\begin{labelalign} %\small\onehalfspacing
+		\item[${2:\it} ${3:Label:}] ${0}
+	\end{labelalign}
+	\vspace{.05in}
+#
+
+# Enumerate
+snippet enum "Enumerate" b
+	\begin{enumerate}
+		\item[${1:\it }${2:Label:}] ${0}
+	\end{enumerate}
+#
+
+# Itemize
+snippet item "Itemize" b
+	\begin{itemize}
+		\item[${1:\it} ${2:Label:}] ${0}
+	\end{itemize}
+#
+
+#Item
+snippet i "Item"
+	\item[${1:\it} ${2:Label:}] ${0}
+#
+
+# Section
+snippet sec "Section" b
+	\section{${1:Name}}%
+		\label{sec:${2:$1}}
+		${0}
+#
+
+# Sub Section
+snippet sub "Sub Section" b
+	\subsection{${1:Name}}%
+		\label{sub:${2:$1}}
+		${0}
+#
+
+# Sub Sub Section
+snippet ssub "Sub Sub Section" b
+	\subsubsection{${1:Name}}%
+		\label{sub:${2:$1}}
+		${0}
+#
+
+#Formating text: italic, bold, underline, small capital, emphase ..
+snippet it "Italics" wi
+	\textit{${1}}${0}
+#
+
+snippet tt "Teletype" wi
+	\texttt{${1}}${0}
+#
+
+snippet bf "Bold" wi
+	\textbf{${1}}${0}
+#
+
+snippet sc "Small Caps" wi
+	\textsc{${1}}${0}
+#
+
+snippet tsub "Subscripted" i
+	\textsubscript{${1}}${0}
+#
+
+snippet tsup "Superscripted" i
+	\textsuperscript{${1}}${0}
+#
+
+#misc
+snippet fproof "Footnote Proof" bi
+	\footnote{\textit{Proof:} ${1:Begin} \qed}${0}
+#
+
+snippet lab "Label" wi
+	\label{${1:LABEL}}${0}
+#
+
+snippet fn "Footnote" wi
+	\footnote{${1:FOOTNOTE}}${0}
+#
+
+snippet fig "Figure environment" b
+	\begin{figure}
+	\begin{center}
+		\includegraphics[scale=${1}]{Figures/${2}}
+	\end{center}
+	\caption{${3}}
+	\label{fig:${4}}
+	\end{figure}
+	${0}
+#
+
+snippet defn "definition"
+	\dfn{}{}
+#
+
+snippet ch "chapter"
+	\chapter{}
+
+#
+
+snippet qs "question"
+	\qs{}{}
+
+snippet clm "claim"
+	\clm{${0}}{}{}
+
+snippet ex "example"
+	\ex{${0}}{}
+
+snippet thm "theorem"
+	\thm{${0}}{}
+
+snippet proof "proof"
+	\begin{myproof}
+	\end{myproof}
+
+snippet cor "corollary"
+	\cor{}{}
+
+snippet lem "lemma"
+	\mlemma{}{}
+
+snippet prop "proposition"
+	\mprop{}{}
+
+snippet img "image"
+	\begin{figure}[H]
+	\includegraphics[scale=0.4]{${0}}
+	\centering
+	\end{figure}
+snippet colvec3 "column vector of 3 elements"
+	\begin{bmatrix} ${0} \\\\ ${1} \\\\ ${2} \end{bmatrix}
+snippet matC "3x3 matrix"
+	\begin{bmatrix}
+	a & b/2 & d/2 \\\\
+	b/2 & c & e/2 \\\\
+	d/2 & e/2 & f
+	\end{bmatrix}
